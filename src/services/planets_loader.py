@@ -13,6 +13,7 @@ class PlanetsLoader(object):
         page_index = 1
 
         while True:
+            print("pegando pagina" + str(page_index))
             conn.request("GET", "/api/planets/?page=" + str(page_index))
 
             response = conn.getresponse()
